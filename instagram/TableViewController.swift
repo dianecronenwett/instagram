@@ -60,7 +60,19 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         return cell
     }
-   
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Determine which row was selected
+        var cell = sender as UITableViewCell
+        var indexPath = tableView.indexPathForCell(cell)
+        
+        // Get the view controller that we're transitioning to.
+        var photoViewController = segue.destinationViewController as PhotoViewController
+        
+        // Set the data of the view controller
+        var photo = photos[indexPath!.row] as NSDictionary
+        photoViewController.photo = photo
+    }
+
 
     /*
     // MARK: - Navigation

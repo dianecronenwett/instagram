@@ -9,14 +9,20 @@
 import UIKit
 
 class PhotoViewController: UIViewController {
-
+    var photo: NSDictionary!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var photoURL = photo.valueForKeyPath("images.low_resolution.url") as String
+        
+        self.imageView.setImageWithURL(NSURL(string: photoURL))
 
+       
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

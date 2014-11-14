@@ -39,6 +39,7 @@
                                         <connections>
                                             <outlet property="photoView" destination="Adk-XP-R1l" id="Be3-kK-Y0j"/>
                                             <outlet property="urlLabel" destination="x63-Pt-dPa" id="D7E-yl-l8L"/>
+                                            <segue destination="IvI-82-nUL" kind="modal" id="9Ql-GB-K5j"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -58,12 +59,21 @@
         <!--Photo View Controller-->
         <scene sceneID="x0n-fE-QWF">
             <objects>
-                <viewController id="IvI-82-nUL" userLabel="Photo View Controller" sceneMemberID="viewController">
+                <viewController id="IvI-82-nUL" userLabel="Photo View Controller" customClass="PhotoViewController" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X7d-aj-7xw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7Lt-2W-UtC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="7Lt-2W-UtC" id="36r-hR-vU5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZG-HS-nyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

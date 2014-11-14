@@ -49,7 +49,7 @@
 		E45FC50B1A159CF200679CCA /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		E45FC50D1A159FAF00679CCA /* instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "instagram-Bridging-Header.h"; sourceTree = "<group>"; };
 		E45FC50E1A159FAF00679CCA /* bridgingFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridgingFile.m; sourceTree = "<group>"; };
-		E45FC5101A15A18300679CCA /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		E45FC5101A15A18300679CCA /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoViewController.swift; path = ../PhotoViewController.swift; sourceTree = "<group>"; };
 		E4C20234378AD721C2CC9B69 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,6 @@
 		E42C39CE1A0C5D0800CA5968 = {
 			isa = PBXGroup;
 			children = (
-				E45FC5101A15A18300679CCA /* PhotoViewController.swift */,
 				E421DE0C1A15965700F71F4C /* Podfile */,
 				E42C39D91A0C5D0800CA5968 /* instagram */,
 				E42C39EF1A0C5D0800CA5968 /* instagramTests */,
@@ -114,6 +113,7 @@
 		E42C39D91A0C5D0800CA5968 /* instagram */ = {
 			isa = PBXGroup;
 			children = (
+				E45FC5101A15A18300679CCA /* PhotoViewController.swift */,
 				E42C39DC1A0C5D0800CA5968 /* AppDelegate.swift */,
 				E42C39DE1A0C5D0800CA5968 /* ViewController.swift */,
 				E42C39E01A0C5D0800CA5968 /* Main.storyboard */,
